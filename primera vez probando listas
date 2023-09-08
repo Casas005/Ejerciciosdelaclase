@@ -1,0 +1,11 @@
+lista = [12, 456, 2, 123]
+
+print(lista)
+
+lista.sort()
+
+print(lista)
+
+listas.reverse()
+
+print(lista)
