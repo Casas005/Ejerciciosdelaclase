@@ -1,0 +1,96 @@
+#-------------------------------------------------------------
+# 1- Voltaje
+
+corriente = int(input("Dame la corriente:  "))
+resistencia = int(input("Dame la resistencia:  "))
+voltaje = corriente * resistencia
+vol =str(voltaje)
+print("El voltaje es " + vol)
+
+
+#-------------------------------------------------------------
+# 2 Taylor Swift en CDMX
+
+precio = int(input("Dame el precio de los vuelos hace un año:  "))
+
+new = 8000 - precio
+por = (8000 / precio) * 100
+
+newnew = str(new)
+porpor = str(por)
+
+print("la diferencia de presio es de "+ newnew + " y el porcentaje de incremento es del "+ porpor + "%")
+
+
+#-------------------------------------------------------------------------
+# 3 Par o Impar
+
+num = int(input("dame un numero:  "))
+
+
+if num % 2 == 0:
+    print("par")
+else:
+    print("impar")
+
+#-------------------------------------------------------------------------
+# 4 lista de libros
+
+libros = ["Biblia", "Coran", "Principito", "El diario de Greg", "Programacion en Python", "Algoritmos avanzados", "Algebra de Baldor"]
+
+libros.reverse()
+libros.insert(0,"Math 2")
+libros.insert(4,"Power")
+libros.insert(2,"Death in the Nile")
+libros.insert(6,"4 Grandes")
+libros.remove("Coran")
+libros.remove("Principito")
+
+print(libros)
+
+#-------------------------------------------------------------------------------------
+# 5 lupe con su bici
+
+lado_penta = int(input("Dame el lado de la llanta pentagonal: "))
+apo_penta = int(input("Dame el apotema de la llanta pentagonal: "))
+
+lado_hexa = int(input("Dame el lado de la llanta hexagonal: "))
+apo_hexa = int(input("Dame el apotema de la llanta hexagonal: "))
+
+peri_penta = lado_penta * 5
+area_penta = (peri_penta * apo_penta) / 2 
+
+peri_hexa = lado_hexa * 6
+area_hexa = (peri_hexa * apo_hexa) / 2
+
+if area_hexa > area_penta:
+    area = str(area_hexa) 
+    print("Utiliza la hexagonal porque tiene el area de " + area +" que es mas grande")
+else:
+    area = str(area_penta)
+    print("Utiliza la pentagonal porque tiene el area de " + area +" que es mas grande")
+
+
+#--------------------------------------------------------------------------------------------
+# 6- .remove() / .insert()
+
+# 7- len()
+
+# 8- string es una cadena
+
+# 9- hay strings y sirven para poner un elemento con letras
+#    int y sirven para poner un valor numerico 
+
+# 10- una variable es un elemento que no esta definido 
+
+# 11- al ponerlo en una linea el "and" funciona como un "y", ejemplo me gusta esto "y" esto, si si pasa sera verdad
+#     al ponerlo en una linea el "or" funciona como un "o", ejemplo me gusta esto "o" esto, sisi pasa alguna de las dos sera verdad
+#     al ponerlo en una linea el "not" funciona com un "no", si no son era verdad
+
+#--------------------------------------------------------------------------------
+# challenge de un lado de un triangulo
+lado = int(input("dame el lado: "))
+
+area = lado * lado * (3**(1/2) / 4) 
+
+print(area)
